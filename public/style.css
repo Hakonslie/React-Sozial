@@ -1,0 +1,251 @@
+#root {
+    margin: 70px;
+    font-family: Arial, sans-serif;
+}
+table {
+    width: 80%;
+    padding: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 500px;
+}
+.searchBar {
+    padding: 0.4em !important;
+    margin: auto;
+    font-size: 1em;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background: white;
+    border-bottom: 2px solid #FCE1E5;
+    text-align: center;
+    color: #94bbbb;
+}
+.searchBar:focus {
+    background: white;
+}
+.searchBar::placeholder {
+    color: #94bbbb;
+}
+
+tbody {
+    margin: 0;
+    width: 100%;
+}
+table, tbody, tr, td {
+    padding: 0;
+}
+td.leftContent {
+    vertical-align: top;
+    min-width: 200px;
+    width: 200px;
+}
+td.centerContent {
+    vertical-align: center !important;
+}
+table h2 {
+    font-size: 4em;
+}
+tfoot {
+    text-align: right;
+    font-size: 0.8em;
+    font-style: italic;
+}
+ul.searchResults {
+}
+ul.searchResults li {
+    list-style: none;
+    text-transform: capitalize;
+}
+.searchResult {
+    padding: 5px;
+    color: #94bbbb;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.searchResult:hover {
+    color: burlywood;
+}
+.searchResult::before {
+    color: #FCE1E5;
+    content: "+"
+}
+
+.addOrRemoveFriend {
+    color: #0074D9;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.postDelete {
+    display: block;
+    float: right;
+    color: red;
+    font-size: 0.8em;
+    margin-top: -20px;
+    cursor: pointer;
+}
+.postContainer {
+    width: 80%;
+    display: block;
+    border: 1px solid #d6faff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    background-color: #fffffb;
+}
+.postMessage {
+
+}
+.postAuthor {
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 0.8em;
+}
+.postAuthor::before {
+    content: "-";
+}
+.postTime {
+    text-transform: capitalize;
+    text-align: right;
+    font-size: 0.7em;
+}
+
+.onlineCounter {
+    text-align: right;
+    font-size: 0.9em;
+    text-decoration: underline;
+}
+input,textarea{
+    border: 1px solid black;
+    background-color: #FCE1E5;
+    padding: 0.5em;
+    font-size: 2em;
+    border-radius: 10px;
+}
+input,textarea:focus {
+    background-color: #FCE1D0;
+    outline: none;
+}
+input::placeholder {
+    text-transform: capitalize;
+}
+
+h5 {
+    font-size: 1em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.headerBar {
+    margin: 30px auto auto;
+    border-bottom: 1px solid black;
+    height: 50px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+
+.msgDiv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.notLoggedInMsg {
+    justify-self: flex-start;
+}
+.home {
+    float: left;
+}
+.btnPartHeader {
+    float: right;
+    margin: 30px;
+}
+
+.UserId {
+    text-transform: capitalize;
+}
+
+.ProfilePage {
+    padding: 0;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.ProfilePage h2 {
+    font-size: 3em;
+}
+.ProfilePage ul {
+    margin: 0;
+    padding: 0;
+
+}
+.ProfilePage li {
+    margin: 0;
+    padding: 0;
+list-style: none
+}
+.editProfileClicker {
+    color: #6e89ff;
+    text-decoration: underline;
+}
+
+.index {
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    width: 30px;
+    border: 1px solid transparent;
+    margin-right: -1px;
+    margin-top: -1px;
+}
+.errorSignup {
+    display: block;
+    margin: auto;
+}
+.btnSignUp {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.btnPart {
+    display: inline-flex;
+}
+.newPost {
+    width: 90%;
+    background-color: #e6faff;
+    font-size: 1.5em;
+    min-height: 100px;
+}
+
+.btn {
+    width: 90px;
+    height: 20px;
+    background-color: #8de8fc;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #c2f7fc;
+}
+
+.btnDeActive {
+    width: 90px;
+    background-color: rgb(207, 205, 200);
+    color: rgb(153, 153, 153);
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
