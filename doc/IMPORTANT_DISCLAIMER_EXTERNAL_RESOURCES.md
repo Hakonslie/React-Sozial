@@ -42,3 +42,6 @@ Generic sign up and login functionality is in its entirety copied from these pag
 - `test/client/home-test.jsx` _(Tests not logged in and logged in state on Home)_
 - `test/client/login-test.jsx` _(Tests failing login and successful login)_
 - `test/client/signup-test.jsx` _(Tests not logged in and logged in state on Home)_
+
+### Other resources
+Other resources like stackoverflow and react docs are used and linked to as a comment next to the code in such case.

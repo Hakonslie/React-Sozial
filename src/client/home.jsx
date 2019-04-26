@@ -76,7 +76,7 @@ export class Home extends React.Component {
         this.setState({usersForSearchBar: responseJson.users, filtered: responseJson.users});
     };
 
-    //  From: https://dev.to/iam_timsmith/lets-build-a-search-bar-in-react-120j
+    //  NOT MADE BY ME: From: https://dev.to/iam_timsmith/lets-build-a-search-bar-in-react-120j
 
     handleChange = (e) => {
         if(this.state.usersForSearchBar.length === 0) {

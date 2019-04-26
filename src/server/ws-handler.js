@@ -15,7 +15,16 @@ function init(app) {
             broadcastCount();
         });
     });
+
 }
+
+function broadcastMessages() {
+    const n = ews.getWss().clients.size;
+    ews.getWss().clients.forEach((client) => {
+        const data = JSON.stringify
+    })
+}
+
 
 function broadcastCount() {
     const n = ews.getWss().clients.size;

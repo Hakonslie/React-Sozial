@@ -18,6 +18,8 @@ class App extends React.Component {
             userCount: 1
         };
     }
+// Websocket generic functionality and counter from web and api course github as stated in disclaimer, but also picked up here:
+// https://github.com/arcuri82/web_development_and_api_design/blob/master/les09/chat/websocket-full/src/client/index.jsx
 
     componentDidMount() {
         this.fetchAndUpdateUserInfo();
@@ -56,7 +58,6 @@ class App extends React.Component {
             return;
         }
         if (response.status !== 200) {
-            //TODO here could have some warning message in the page.
         } else {
             const payload = await response.json();
             this.updateLoggedInUser(payload);

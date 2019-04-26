@@ -72,6 +72,6 @@ function returnPostsForUser(userId){
     }
     return postsFromUsers
 }
-/*
-loadDummyData();*/
+
+loadDummyData();
 module.exports = router;

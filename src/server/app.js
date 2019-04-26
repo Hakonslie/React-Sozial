@@ -75,6 +75,5 @@ app.use((req, res, next) => {
     res.sendFile(path.resolve(__dirname, '..', '..', 'public', 'index.html'));
 });
 
-// Load dummy data on create
 
 module.exports = {app};
