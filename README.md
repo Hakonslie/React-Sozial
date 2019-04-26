@@ -45,8 +45,8 @@ You will find the server at http://localhost:8080
 - I struggled a lot with logging out and in, in the process of trying not to share the user's password I was deleting the locally stored password. I figured it out though
 
 ### Grade prediction
-As I have not been able to implement Websockets for chat or posts I could expect to get a C, but I do have websockets for usercounter and I have spent time on other functionality instead. 
-If the importance of the chat and auto-updated post functionality is not as critical then I should get a B, considering I have tests, UI, a good restful API and other factors too.
+As I have not been able to implement Websockets for chat or posts I could expect to get a C, however I do have websockets for counting current connections. I time on other functionality. 
+If the importance of the chat and auto-updated post functionality is not as critical then I should get a B; considering I have more functionality, tests, UI and a good restful API.
 
 ---
 

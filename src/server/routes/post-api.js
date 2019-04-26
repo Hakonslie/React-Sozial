@@ -1,6 +1,6 @@
 const express = require('express');
 
-const {loadDummyData, getPost, createPost, getAllPosts, removePost} = require('../db/posts');
+const {getFriendsOfUser, loadDummyData, getPost, createPost, getAllPosts, removePost} = require('../db/posts');
 const Relations = require('../db/relations');
 const router = express.Router();
 
@@ -40,7 +40,7 @@ router.get('/posts', (req, res) => {
         return;
     }
     let payload = [];
-    let relations = Relations.getRelationsForUser(req.user.id);
+    let relations = Relations.getFriendsOfUser(req.user.id);
     relations.push(req.user.id);
     relations.forEach(userId => {
         (returnPostsForUser(userId).forEach(k => payload.push(k)));

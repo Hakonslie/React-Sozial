@@ -8,6 +8,16 @@ function getRelationsForUser(userId){
 function controlRelation(userId, requestedUserId) {
     return getRelationsForUser(requestedUserId).includes(userId);
 }
+function getFriendsOfUser(userId) {
+    let iBefriended = getRelationsForUser(userId);
+    let befriendedMe = getUsersHavingAcceptedThisUser(userId);
+    return iBefriended.filter(e => befriendedMe.includes(e))
+}
+
+function getUsersHavingAcceptedThisUser(userId) {
+    let gotRelations = relationsArray.filter(r => r.endsWith("|" + userId));
+    return gotRelations.map(l => l.replace(("|" + userId), ""))
+}
 
 function getAwaitingRelationsForUser(userId){
     let gotAwaitingRelations = awaitingRelationsArray.filter(r => r.startsWith(userId + "|"));
@@ -55,4 +65,4 @@ function loadDummyData(){
 
 
 
-module.exports = {controlRelation, loadDummyData, addRelation, removeRelation, getRelationsForUser, getAwaitingRelationsForUser};
+module.exports = {getFriendsOfUser, controlRelation, loadDummyData, addRelation, removeRelation, getRelationsForUser, getAwaitingRelationsForUser};
