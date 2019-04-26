@@ -52,32 +52,32 @@ If the importance of the chat and auto-updated post functionality is not as crit
 
 ## Structure, Implementation and Technology
 
-###Implementation and Technology
+### Implementation and Technology
 
-#####Websocket
+#### Websocket
 Websockets is used to present total users connected at any time
 
-#####Passport
+##### Passport
 The project uses passport for login and user authentication, it is easy to implement and combine with other technologies. Plus it works absolutely amazing next to express
 
-#####Express Node.js
+##### Express Node.js
 Express node.js is an amazing backend for handling static React files and API-s at the same time. It is predictable and fun to use. Many things are self explanatory and resources online are easily found.
 
-#####React
+##### React
 React is used as a SPA on the frontend, React is also comfortable and predictable, I have far from exploited the potential of react in this project, but scraped upon it. This project itself has specific potential on creation of components and child components.
 
-#####Concurrently and nodemon
+##### Concurrently and nodemon
 These are two amazing libraries for allowing fast development as it will listen to changes in both frontend and backend and restart the server if necessary
 
-#####Enzyme and Jest
+##### Enzyme and Jest
 Enzyme and Jest provides a headless browser that allows easy testing of frontend applications
 
-#####Deployment
+##### Deployment
 Project is deployed on http://sozial-media.herokuapp.com/
 
-###Structure
+### Structure
 
-#####Frontend
+##### Frontend
 The page is built at **Index** with a headerBar that handles login, signup and logout. Furthermore it uses react router to load components depending on the URI sent.
 It passes the user.id of the passport-validated user downwards through the components. There are not any deeper levels than that
 
@@ -88,7 +88,7 @@ change personal information and write new posts
 **Home page** is loaded first and gets all the posts available to the logged in user (depending on which users have befriended him). The homepage
 also has a list of users on the page and a search field to find users. 
 
-#####Backend
+##### Backend
 At backend `app.js` handles the basic passport implementation and routes api requests onwards to **post-api.js** and **user-api.js**.
 user.api.js further provides user creation, login, changes to api and opens API to get public profiles of all users. It also provides all userIds
 for the searchbar at homepage. user-api.js also provides API-s to configure relations between users. post-api.js provides API-s for reading, creating and deleting posts.
