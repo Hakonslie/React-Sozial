@@ -168,8 +168,8 @@ router.post('/user/relations', function (req, res) {
     res.status(204).send();
 
 });
-
+/*
 Users.loadDummyData();
 Relations.loadDummyData();
-
+*/
 module.exports = router;
